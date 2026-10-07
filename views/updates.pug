@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Add a Sports Card
+    form(action="/update-cobj", method="POST")
+      label(for="name") Name
+      input(type="text", id="name", name="name", required)
+      label(for="sport") Sport
+      input(type="text", id="sport", name="sport")
+      label(for="year") Year
+      input(type="number", id="year", name="year")
+      button(type="submit") Submit
+    a(href="/") Return to the homepage
